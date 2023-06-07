@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "Mifuente";
+  src: url(./font/Raleway-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: "fuente2";
+  src: url(./font/Raleway-Light.ttf);
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  background-color: #f4f1e8;
+  margin: 0;
+}
+
+.fondo-color-cadep {
+  background: #eeb469;
+}
+.color-hamburguesa {
+  color: black; /* Color de letra del icono hamburguesa */
+  background-color: transparent; /* Color de fondo del icono hamburguesa */
+  border-color: transparent; /* Color del borde del icono hamburguesa */
+}
+.color-nav-cadep {
+  color: #483c2e;
+}
+
+.nav-link:hover{
+  background-color: #483c2e;
+  color: white;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+
+.news-box {
+  padding-left: 370px;
+}
+
+.news-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-box article {
+  margin-bottom: 20px;
+}
+
+.news-box article h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.news-box article p {
+  margin-top: 10px;
+  text-align: left;
+  width: 48em;
+}
+
+.news-box article a {
+  text-decoration: none;
+  color: black;
+}
+
+.news-box article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+
+  .producto-container {
+    display: none;
+  }
+}
+
+.page-content {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+#inicioTienda {
+  padding-left: 100px;
+}
+.producto-container1 {
+  text-align: center;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.producto-container1 img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.producto-container {
+  text-align: center;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.producto-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.producto-container img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+}
+
+.boton-compras {
+  background-color: #4caf50;
+  /* Green */
+  border: 1px transparent;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.boton-compras:hover {
+  background-color: #bae4bb;
+  /* Green */
+  color: white;
+}
+
+.cursoArbitro h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cursoArbitro h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.requisitosUno {
+  max-height: 118px;
+}
+
+.requisitosUno li {
+  list-style: circle inside none;
+  border: 0;
+  margin: 2em;
+  font-size: 1em;
+}
+
+.cursoArbitro p {
+  padding: 0;
+  border: 0;
+  margin: 2em;
+  font-size: 1em;
+}
+
+.imagenCurso {
+  padding-left: 700px;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .login-general {
+    width: 80%;
+    height: auto;
+  }
+}
+
+#cuerpo_login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-general {
+  width: 320px;
+  height: 420px;
+  background: #794827;
+  color: #dbd8d6;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 5%;
+}
+
+.login-general .login-logo {
+  width: 81px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(54% - 50px);
+}
+
+.login-general h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.login-general label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-general input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-general input[type="mail"],
+.login-general input[type="password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.login-general input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #eeb469;
+  color: black;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-general a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.login-general a:hover {
+  color: white;
+}
+
+.container-curso h1 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.container-curso {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-section {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.course-section:last-child {
+  border-bottom: none;
+}
+
+.course-section__title {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.course-section__content {
+  line-height: 1.5;
+}
+
+.course-section__list {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.course-section__item {
+  margin-bottom: 10px;
+}
+
+.container-institucional {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-institucional h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.authorities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.authority {
+  text-align: center;
+}
+
+.authority img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.authority h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.authority p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: #483c2e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-bottom: 10px;
+}
