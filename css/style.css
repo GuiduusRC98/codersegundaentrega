@@ -14,6 +14,10 @@
   padding: 20px;
 }
 
+.max-height-inicio {
+  max-width: 252.34px;
+}
+
 body {
   background-color: #f4f1e8;
   margin: 0;
