@@ -8,6 +8,11 @@
   src: url(./font/Raleway-Light.ttf);
 }
 
+.logo.cadep {
+  opacity: 0;
+  animation: logoAnimation 1s ease-in-out forwards;
+}
+
 .container {
   max-width: auto;
   margin: 0 auto;
@@ -15,22 +20,14 @@
 }
 
 .max-inicio {
-  width: 100%;
   max-height: 528px;
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .max-inicio {
-    max-height: 237px;
-    object-fit: cover;
-  }
-
-}
 .carousel-caption p {
-  max-height: 2.6em;
+  max-height: 2.7em;
   overflow: hidden;
-  text-overflow: ellipsis; /* Agrega puntos suspensivos para indicar que hay más contenido */
+  text-overflow: ellipsis;
 }
 
 body {
@@ -41,11 +38,13 @@ body {
 .fondo-color-cadep {
   background: #eeb469;
 }
+
 .color-hamburguesa {
-  color: black; /* Color de letra del icono hamburguesa */
-  background-color: transparent; /* Color de fondo del icono hamburguesa */
-  border-color: transparent; /* Color del borde del icono hamburguesa */
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
 }
+
 .color-nav-cadep {
   color: #483c2e;
 }
@@ -55,6 +54,7 @@ body {
   color: white;
   text-decoration: none;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -102,7 +102,10 @@ header {
     display: block;
     padding-left: 350px;
   }
-
+  .max-inicio {
+    max-height: 242.2px;
+    object-fit: cover;
+  }
   .producto-container {
     display: none;
   }
@@ -118,37 +121,26 @@ header {
 #inicioTienda {
   padding-left: 100px;
 }
-.producto-container1 {
-  text-align: center;
-  padding-left: 100px;
-  padding-bottom: 20px;
-}
 
-.producto-container1 img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-}
-
+.producto-container1,
 .producto-container {
   text-align: center;
   padding-left: 100px;
   padding-bottom: 20px;
 }
-
+.producto-container1 img,
 .producto-container img {
   width: 300px;
   height: 300px;
   object-fit: contain;
 }
-
+.producto-container1 img:hover,
 .producto-container img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 
 .boton-compras {
-  background-color: #4caf50;
-  /* Green */
+  background-color: #4caf50; /* Green */
   border: 1px transparent;
   color: white;
   padding: 15px 32px;
@@ -160,8 +152,7 @@ header {
 }
 
 .boton-compras:hover {
-  background-color: #bae4bb;
-  /* Green */
+  background-color: #bae4bb; /* Green */
   color: white;
 }
 
@@ -174,12 +165,10 @@ header {
   text-align: center;
   font-weight: bold;
 }
-
-.requisitosUno {
+.cursoArbitro .requisitosUno {
   max-height: 118px;
 }
-
-.requisitosUno li {
+.cursoArbitro li {
   list-style: circle inside none;
   border: 0;
   margin: 2em;
@@ -192,8 +181,7 @@ header {
   margin: 2em;
   font-size: 1em;
 }
-
-.imagenCurso {
+.cursoArbitro .imagenCurso {
   padding-left: 700px;
   position: absolute;
 }
@@ -288,44 +276,44 @@ header {
   color: white;
 }
 
-.container-curso h1 {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
 .container-curso {
   max-width: auto;
   margin: 0 auto;
   padding: 20px;
 }
 
-.course-section {
+.container-curso h1 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.container-curso .course-section {
   margin-bottom: 30px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
 
-.course-section:last-child {
+.container-curso .course-section:last-child {
   border-bottom: none;
 }
 
-.course-section__title {
+.container-curso .course-section__title {
   padding-top: 20px;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
-.course-section__content {
+.container-curso .course-section__content {
   line-height: 1.5;
 }
 
-.course-section__list {
+.container-curso .course-section__list {
   margin-top: 0;
   padding-left: 20px;
 }
 
-.course-section__item {
+.container-curso .course-section__item {
   margin-bottom: 10px;
 }
 
@@ -340,29 +328,29 @@ header {
   padding-bottom: 25px;
 }
 
-.authorities {
+.container-institucional .authorities {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.authority {
+.container-institucional .authorities .authority {
   text-align: center;
 }
 
-.authority img {
+.container-institucional .authorities .authority img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.authority h3 {
+.container-institucional .authorities .authority h3 {
   font-size: 18px;
   margin: 10px 0;
 }
 
-.authority p {
+.container-institucional .authorities .authority p {
   font-size: 16px;
   margin: 0;
   padding-bottom: 50px;
@@ -375,8 +363,9 @@ footer {
   text-align: center;
   display: block;
 }
-
-.footer-bottom {
+footer .footer-bottom {
   text-align: center;
   padding-bottom: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
