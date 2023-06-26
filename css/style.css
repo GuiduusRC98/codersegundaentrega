@@ -356,6 +356,10 @@ header {
   padding-bottom: 50px;
 }
 
+.authority img {
+  border-radius: 50%;
+}
+
 footer {
   background-color: #483c2e;
   color: #fff;
