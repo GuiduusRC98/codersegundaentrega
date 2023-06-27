@@ -2,17 +2,10 @@
   font-family: "Mifuente";
   src: url(./font/Raleway-BlackItalic.ttf);
 }
-
 @font-face {
   font-family: "fuente2";
   src: url(./font/Raleway-Light.ttf);
 }
-
-.logo.cadep {
-  opacity: 0;
-  animation: logoAnimation 1s ease-in-out forwards;
-}
-
 .container {
   max-width: auto;
   margin: 0 auto;
@@ -20,7 +13,7 @@
 }
 
 .max-inicio {
-  max-height: 528px;
+  max-height: 495px;
   object-fit: cover;
 }
 
@@ -65,52 +58,77 @@ header {
 .news-box {
   padding-left: 370px;
 }
-
 .news-box h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
 .news-box article {
   margin-bottom: 20px;
 }
-
 .news-box article h3 {
   font-size: 18px;
   margin: 0;
 }
-
 .news-box article p {
   margin-top: 10px;
   text-align: left;
   width: 48em;
 }
-
 .news-box article a {
   text-decoration: none;
   color: black;
 }
-
 .news-box article img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .producto-container1 {
     display: block;
     padding-left: 350px;
   }
   .max-inicio {
-    max-height: 242.2px;
+    max-height: 350px;
     object-fit: cover;
   }
   .producto-container {
     display: none;
   }
 }
-
+@media (max-width: 768px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+  .max-inicio {
+    max-height: 236px;
+    object-fit: cover;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .producto-container {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+  .max-inicio {
+    max-height: 166px;
+    object-fit: cover;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .producto-container {
+    display: none;
+  }
+}
 .page-content {
   max-width: 1200px;
   display: grid;
@@ -140,7 +158,7 @@ header {
 }
 
 .boton-compras {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border: 1px transparent;
   color: white;
   padding: 15px 32px;
@@ -150,9 +168,8 @@ header {
   font-size: 16px;
   border-radius: 4px;
 }
-
 .boton-compras:hover {
-  background-color: #bae4bb; /* Green */
+  background-color: #bae4bb;
   color: white;
 }
 
@@ -160,7 +177,6 @@ header {
   text-align: center;
   font-weight: bold;
 }
-
 .cursoArbitro h3 {
   text-align: center;
   font-weight: bold;
@@ -174,7 +190,6 @@ header {
   margin: 2em;
   font-size: 1em;
 }
-
 .cursoArbitro p {
   padding: 0;
   border: 0;
@@ -192,7 +207,6 @@ header {
     height: auto;
   }
 }
-
 #cuerpo_login {
   display: flex;
   align-items: center;
@@ -213,7 +227,6 @@ header {
   padding: 70px 30px;
   border-radius: 5%;
 }
-
 .login-general .login-logo {
   width: 81px;
   height: 100px;
@@ -221,28 +234,23 @@ header {
   top: -50px;
   left: calc(54% - 50px);
 }
-
 .login-general h1 {
   margin: 0;
   padding: 0 0 20px;
   text-align: center;
   font-size: 20px;
 }
-
 .login-general label {
   margin: 0;
   padding: 0;
   font-weight: bold;
   display: block;
 }
-
 .login-general input {
   width: 100%;
   margin-bottom: 20px;
 }
-
-.login-general input[type="mail"],
-.login-general input[type="password"] {
+.login-general input[type=mail], .login-general input[type=password] {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
@@ -251,8 +259,7 @@ header {
   color: white;
   font-size: 16px;
 }
-
-.login-general input[type="submit"] {
+.login-general input[type=submit] {
   border: none;
   outline: none;
   height: 40px;
@@ -261,7 +268,6 @@ header {
   font-size: 18px;
   border-radius: 20px;
 }
-
 .login-general a {
   text-decoration: none;
   margin: 0;
@@ -271,7 +277,6 @@ header {
   line-height: 20px;
   color: darkgray;
 }
-
 .login-general a:hover {
   color: white;
 }
@@ -281,38 +286,31 @@ header {
   margin: 0 auto;
   padding: 20px;
 }
-
 .container-curso h1 {
   text-align: center;
   padding-bottom: 25px;
 }
-
 .container-curso .course-section {
   margin-bottom: 30px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
-
 .container-curso .course-section:last-child {
   border-bottom: none;
 }
-
 .container-curso .course-section__title {
   padding-top: 20px;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
-
 .container-curso .course-section__content {
   line-height: 1.5;
 }
-
 .container-curso .course-section__list {
   margin-top: 0;
   padding-left: 20px;
 }
-
 .container-curso .course-section__item {
   margin-bottom: 10px;
 }
@@ -322,42 +320,32 @@ header {
   margin: 0 auto;
   padding: 20px;
 }
-
 .container-institucional h2 {
   text-align: center;
   padding-bottom: 25px;
 }
-
 .container-institucional .authorities {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 .container-institucional .authorities .authority {
   text-align: center;
 }
-
 .container-institucional .authorities .authority img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 .container-institucional .authorities .authority h3 {
   font-size: 18px;
   margin: 10px 0;
 }
-
 .container-institucional .authorities .authority p {
   font-size: 16px;
   margin: 0;
   padding-bottom: 50px;
-}
-
-.authority img {
-  border-radius: 50%;
 }
 
 footer {

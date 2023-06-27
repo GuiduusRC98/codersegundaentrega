@@ -8,18 +8,6 @@
     src: url(./font/Raleway-Light.ttf);
   }
   
-  @keyframes logoAnimation {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  
   .container {
     max-width: auto;
     margin: 0 auto;
@@ -27,7 +15,7 @@
   }
   
   .max-inicio {
-    max-height: 528px;
+    max-height: 495px;
     object-fit: cover;
   }
   
@@ -103,7 +91,22 @@
       }
     }
   }
+  @media (max-width: 990px) {
+    .producto-container1 {
+      display: block;
+      padding-left: 350px;
+    }
   
+    .max-inicio {
+      max-height: 350px;
+      object-fit: cover;
+    }
+    
+    .producto-container {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     .producto-container1 {
       display: block;
@@ -111,10 +114,31 @@
     }
   
     .max-inicio {
-      max-height: 242.2px;
+      max-height: 236px;
       object-fit: cover;
     }
+    
+    .carousel-caption p{
+      display: none;
+    }
+    .producto-container {
+      display: none;
+    }
+  }
+  @media (max-width: 420px) {
+    .producto-container1 {
+      display: block;
+      padding-left: 350px;
+    }
   
+    .max-inicio {
+      max-height: 166px;
+      object-fit: cover;
+    }
+    
+    .carousel-caption p{
+      display: none;
+    }
     .producto-container {
       display: none;
     }
