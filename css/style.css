@@ -6,6 +6,7 @@
   font-family: "fuente2";
   src: url(./font/Raleway-Light.ttf);
 }
+
 .container {
   max-width: auto;
   margin: 0 auto;
@@ -84,51 +85,6 @@ header {
   margin-bottom: 10px;
 }
 
-@media (max-width: 990px) {
-  .producto-container1 {
-    display: block;
-    padding-left: 350px;
-  }
-  .max-inicio {
-    max-height: 350px;
-    object-fit: cover;
-  }
-  .producto-container {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .producto-container1 {
-    display: block;
-    padding-left: 350px;
-  }
-  .max-inicio {
-    max-height: 236px;
-    object-fit: cover;
-  }
-  .carousel-caption p {
-    display: none;
-  }
-  .producto-container {
-    display: none;
-  }
-}
-@media (max-width: 420px) {
-  .producto-container1 {
-    display: block;
-    padding-left: 350px;
-  }
-  .max-inicio {
-    max-height: 166px;
-    object-fit: cover;
-  }
-  .carousel-caption p {
-    display: none;
-  }
-  .producto-container {
-    display: none;
-  }
-}
 .page-content {
   max-width: 1200px;
   display: grid;
@@ -140,19 +96,30 @@ header {
   padding-left: 100px;
 }
 
-.producto-container1,
+.producto-container1 {
+  text-align: center;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+.producto-container1 img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.producto-container1 img:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
 .producto-container {
   text-align: center;
   padding-left: 100px;
   padding-bottom: 20px;
 }
-.producto-container1 img,
 .producto-container img {
   width: 300px;
   height: 300px;
   object-fit: contain;
 }
-.producto-container1 img:hover,
 .producto-container img:hover {
   box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
@@ -201,12 +168,6 @@ header {
   position: absolute;
 }
 
-@media screen and (max-width: 768px) {
-  .login-general {
-    width: 80%;
-    height: auto;
-  }
-}
 #cuerpo_login {
   display: flex;
   align-items: center;
@@ -250,7 +211,16 @@ header {
   width: 100%;
   margin-bottom: 20px;
 }
-.login-general input[type=mail], .login-general input[type=password] {
+.login-general input[type=mail] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+.login-general input[type=password] {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
@@ -331,6 +301,7 @@ header {
 }
 .container-institucional .authorities .authority {
   text-align: center;
+  border-radius: 50%;
 }
 .container-institucional .authorities .authority img {
   width: 200px;
@@ -358,6 +329,64 @@ footer {
 footer .footer-bottom {
   text-align: center;
   padding-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1115px) {
+  .authority {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+  .max-inicio {
+    max-height: 350px;
+    object-fit: cover;
+  }
+  .producto-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+  .max-inicio {
+    max-height: 236px;
+    object-fit: cover;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .producto-container {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .producto-container1 {
+    display: block;
+    padding-left: 350px;
+  }
+  .max-inicio {
+    max-height: 166px;
+    object-fit: cover;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .producto-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-general {
+    width: 80%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

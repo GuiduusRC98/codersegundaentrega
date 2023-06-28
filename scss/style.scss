@@ -287,30 +287,35 @@ header {
 		text-align: center;
 		padding-bottom: 25px;
 	}
-	.authorities {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-		.authority {
-			text-align: center;
-			img {
-				width: 200px;
-				height: 200px;
-				object-fit: cover;
-				border-radius: 50%;
-			}
-			h3 {
-				font-size: 18px;
-				margin: 10px 0;
-			}
-			p {
-				font-size: 16px;
-				margin: 0;
-				padding-bottom: 50px;
-			}
-		}
-	}
-}
+  .authorities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    .authority {
+      text-align: center;
+      border-radius: 50%;
+  
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover; 
+        border-radius: 50%;
+      }
+  
+      h3 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+  
+      p {
+        font-size: 16px;
+        margin: 0;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}  
 footer {
 	background-color: #483c2e;
 	color: $color_6;
@@ -322,6 +327,13 @@ footer {
 		padding-bottom: 10px;
 	}
 }
+@media (min-width: 768px) and (max-width: 1115px) {
+  .authority {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 990px) {
 	.producto-container1 {
 		display: block;
