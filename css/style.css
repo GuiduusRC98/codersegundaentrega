@@ -56,6 +56,10 @@ header {
   height: 8rem;
 }
 
+.logo img {
+  animation: aparecer 1s ease-in-out forwards;
+}
+
 .news-box {
   padding-left: 370px;
 }
@@ -94,6 +98,12 @@ header {
 
 #inicioTienda {
   padding-left: 100px;
+}
+
+.card {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
 }
 
 .producto-container1 {
@@ -331,6 +341,26 @@ footer .footer-bottom {
   padding-bottom: 10px;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @media (min-width: 768px) and (max-width: 1115px) {
   .authority {
     display: block;
