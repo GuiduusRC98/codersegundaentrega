@@ -314,8 +314,8 @@ header {
   border-radius: 50%;
 }
 .container-institucional .authorities .authority img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 50%;
 }
