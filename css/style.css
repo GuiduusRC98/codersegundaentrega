@@ -314,8 +314,7 @@ header {
   border-radius: 50%;
 }
 .container-institucional .authorities .authority img {
-
-  background-size: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 .container-institucional .authorities .authority h3 {
