@@ -99,6 +99,10 @@ header {
 #inicioTienda {
 	padding-left: 100px;
 }
+.card >a {
+	text-decoration: none;
+  }
+  
 .card {
 	animation-duration: 1s;
 	animation-fill-mode: both;
