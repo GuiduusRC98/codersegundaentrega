@@ -119,7 +119,7 @@ header {
 #inicioTienda {
 	padding-left: 100px;
 }
-  .card {
+.card {
 	animation-duration: 1s;
 	animation-fill-mode: both;
 	animation-name: fadeInUp;
@@ -127,12 +127,44 @@ header {
 	a{
 		text-decoration: none;
 	}
+	.card-img-top{
+		width: 320px;
+        height: 320px;
+	}
   
 	&:hover {
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   
   }
-} 
+/* Media queries */
+@media (max-width: 767px) {
+	.card-img-top {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.card-img-top {
+		width: 191px;
+		height: 191px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.card-img-top {
+		width: 271px;
+		height: 271px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.card-img-top {
+		width: 331px;
+		height: 320px;
+	}
+}
+}
   
 // Boton whatsapp
 
@@ -394,39 +426,70 @@ header {
 	max-width: auto;
 	margin: 0 auto;
 	padding: 20px;
+  
 	h2 {
-		text-align: center;
-		padding-bottom: 25px;
+	  text-align: center;
+	  padding-bottom: 25px;
 	}
-  .authorities {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   
-    .authority {
-      text-align: center;
-      border-radius: 50%;
+	.authorities {
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  gap: 20px;
   
-      img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover; 
-        border-radius: 50%;
-      }
+	  .authority {
+		text-align: center;
+		border-radius: 50%;
   
-      h3 {
-        font-size: 18px;
-        margin: 10px 0;
-      }
+		img {
+		  width: 200px;
+		  height: 200px;
+		  object-fit: cover;
+		  border-radius: 50%;
+		}
   
-      p {
-        font-size: 16px;
-        margin: 0;
-        padding-bottom: 50px;
-      }
-    }
+		h3 {
+		  font-size: 18px;
+		  margin: 10px 0;
+		}
+  
+		p {
+		  font-size: 16px;
+		  margin: 0;
+		  padding-bottom: 50px;
+		}
+	  }
+	}
+  
+	// Media queries
+	@media (max-width: 767px) {
+	  .authorities {
+		grid-template-columns: 1fr;
+	  }
+  
+	  .authority {
+		img {
+		  width: 100%;
+		  height: auto;
+		  max-width: 200px;
+		  max-height: 200px;
+		}
+	  }
+	}
+  
+	@media (min-width: 768px) and (max-width: 1199px) {
+	  .authorities {
+		grid-template-columns: 1fr;
+	  }
+	}
+  
+	@media (min-width: 1200px) {
+	  .authorities {
+		grid-template-columns: 1fr;
+	  }
+	}
   }
-}  
+  
 
 .footer {
 	background-color: #483c2e;
@@ -554,13 +617,6 @@ header {
 	  transform: scale(1);
 	}
   }
-
-@media (min-width: 768px) and (max-width: 1115px) {
-  .authority {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 
 @media (max-width: 990px) {
 	.producto-container1 {
