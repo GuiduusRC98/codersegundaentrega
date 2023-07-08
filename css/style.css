@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 @font-face {
   font-family: "Mifuente";
   src: url(./font/Raleway-BlackItalic.ttf);
@@ -100,16 +102,19 @@ header {
   padding-left: 100px;
 }
 
+.card > a {
+  text-decoration: none;
+}
+
 .card {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: fadeInUp;
-  max-height: 331,33px;
 }
 
 .producto-container1 {
   text-align: center;
-  padding-left: 100px;
+  padding-left: 100, 1px;
   padding-bottom: 20px;
 }
 .producto-container1 img {
@@ -262,40 +267,50 @@ header {
   color: white;
 }
 
-.container-curso {
-  max-width: auto;
-  margin: 0 auto;
-  padding: 20px;
-}
-.container-curso h1 {
+.about_section h2 {
   text-align: center;
-  padding-bottom: 25px;
 }
-.container-curso .course-section {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+.about_section .row {
+  align-items: center;
 }
-.container-curso .course-section:last-child {
-  border-bottom: none;
+.about_section .img-box img {
+  max-width: 100%;
 }
-.container-curso .course-section__title {
-  padding-top: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-.container-curso .course-section__content {
-  line-height: 1.5;
-}
-.container-curso .course-section__list {
-  margin-top: 0;
-  padding-left: 20px;
-}
-.container-curso .course-section__item {
-  margin-bottom: 10px;
+.about_section .detail-box p {
+  margin-top: 15px;
 }
 
+.requirements_section {
+  padding: 40px 0;
+}
+.requirements_section .container .row .col-md-6 .detail-box {
+  padding: 20px;
+  border-radius: 5px;
+}
+.requirements_section .container .row .col-md-6 .detail-box .heading_container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.requirements_section .container .row .col-md-6 .detail-box .heading_container h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.requirements_section .container .row .col-md-6 .detail-box .requirements_list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.requirements_section .container .row .col-md-6 .detail-box .requirements_list li {
+  margin-bottom: 10px;
+}
+.requirements_section .container .row .col-md-6 .img-box {
+  text-align: center;
+}
+.requirements_section .container .row .col-md-6 .img-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*  */
 .container-institucional {
   max-width: auto;
   margin: 0 auto;
@@ -315,6 +330,8 @@ header {
   border-radius: 50%;
 }
 .container-institucional .authorities .authority img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -328,16 +345,84 @@ header {
   padding-bottom: 50px;
 }
 
-footer {
+.footer {
   background-color: #483c2e;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  display: block;
+  padding: 50px 0;
 }
-footer .footer-bottom {
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+.footer .footer-logo img {
+  width: 150px;
+  height: auto;
+}
+.footer .footer-info {
+  flex: 1;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+.footer .footer-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .footer-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer .footer-map {
+  flex: 1;
+}
+.footer .footer-map .map-responsive {
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%; /* Proporción 16:9 (para relación de aspecto de mapa 16:9) */
+}
+.footer .footer-map .map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer .footer-social {
+  flex: 1;
+  margin: 20px 0;
+  color: #fff;
+}
+.footer .footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .footer-social .social-links i {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.footer .footer-social .social-links i li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer .footer-social .social-links i a {
+  color: #333;
+  font-size: 20px;
+}
+.footer .footer-bottom {
   text-align: center;
-  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.footer .footer-bottom p {
+  font-size: 14px;
+  color: #fff;
 }
 
 @keyframes fadeInUp {

@@ -5,6 +5,8 @@ $color_4: #dbd8d6;
 $color_5: darkgray;
 $color_6: #fff;
 
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 @font-face {
 	font-family: "Mifuente";
 	src: url(./font/Raleway-BlackItalic.ttf);
@@ -259,39 +261,77 @@ header {
 		}
 	}
 }
-.container-curso {
-	max-width: auto;
-	margin: 0 auto;
-	padding: 20px;
-	h1 {
+
+// about section
+.about_section {
+	h2{
 		text-align: center;
-		padding-bottom: 25px;
 	}
-	.course-section {
-		margin-bottom: 30px;
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 20px;
-		&:last-child {
-			border-bottom: none;
+
+	.row {
+	  align-items: center;
+	}
+  
+	.img-box {
+	  img {
+		max-width: 100%;
+	  }
+	}
+  
+	.detail-box {
+	  p {
+		margin-top: 15px;
+	  }
+  
+	}
+  }
+  .requirements_section {
+	padding: 40px 0;
+  
+	.container {
+	  .row {
+		.col-md-6 {
+		  .detail-box {
+			padding: 20px;
+			border-radius: 5px;
+  
+			.heading_container {
+			  text-align: center;
+			  margin-bottom: 20px;
+  
+			  h2 {
+				font-size: 24px;
+				font-weight: bold;
+			  }
+			}
+  
+			.requirements_list {
+			  list-style-type: disc;
+			  padding-left: 20px;
+  
+			  li {
+				margin-bottom: 10px;
+			  }
+			}
+		  }
 		}
+  
+		.col-md-6 {
+		  .img-box {
+			text-align: center;
+  
+			img {
+			  max-width: 100%;
+			  height: auto;
+			}
+		  }
+		}
+	  }
 	}
-	.course-section__title {
-		padding-top: 20px;
-		font-size: 24px;
-		font-weight: bold;
-		margin: 0;
-	}
-	.course-section__content {
-		line-height: 1.5;
-	}
-	.course-section__list {
-		margin-top: 0;
-		padding-left: 20px;
-	}
-	.course-section__item {
-		margin-bottom: 10px;
-	}
-}
+  }
+  
+  
+/*  */
 .container-institucional {
 	max-width: auto;
 	margin: 0 auto;
@@ -329,17 +369,109 @@ header {
     }
   }
 }  
-footer {
+
+.footer {
 	background-color: #483c2e;
-	color: $color_6;
-	padding: 20px;
-	text-align: center;
-	display: block;
-	.footer-bottom {
-		text-align: center;
-		padding-bottom: 10px;
+	padding: 50px 0;
+  
+	.container {
+	  max-width: 1200px;
+	  margin: 0 auto;
+	  padding: 0 20px;
 	}
-}
+  
+	.footer-content {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  align-items: flex-start;
+	  color: #fff;
+	}
+  
+	.footer-logo {
+	  img {
+		width: 150px;
+		height: auto;
+	  }
+	}
+  
+	.footer-info {
+	  flex: 1;
+	  margin: 20px 0;
+	  padding-left: 10px;
+  
+	  h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	  }
+  
+	  p {
+		font-size: 14px;
+		line-height: 1.5;
+	  }
+	}
+  
+	.footer-map {
+	  flex: 1;
+  
+	  .map-responsive {
+		overflow: hidden;
+		position: relative;
+		padding-top: 56.25%; /* Proporción 16:9 (para relación de aspecto de mapa 16:9) */
+  
+		iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+	  }
+	}
+  
+	.footer-social {
+	  flex: 1;
+	  margin: 20px 0;
+	  color: #fff;
+  
+	  h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	  }
+  
+	  .social-links i{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: #fff;
+  
+		li {
+		  display: inline-block;
+		  margin-right: 10px;
+		}
+  
+		a {
+		  color: #333;
+		  font-size: 20px;
+		}
+	  }
+	}
+  
+	.footer-bottom {
+	  text-align: center;
+	  margin-top: 30px;
+  
+	  p {
+		font-size: 14px;
+		color: #fff;
+	  }
+	}
+  }
+  
+	
+
+  
+
 
 @keyframes fadeInUp {
 	from {
