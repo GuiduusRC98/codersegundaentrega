@@ -559,6 +559,10 @@ header {
   color: #fff;
 }
 
+.social-links li {
+  text-decoration: none;
+}
+
 .footer .footer-social .social-links i li {
   display: inline-block;
   text-decoration: none;
