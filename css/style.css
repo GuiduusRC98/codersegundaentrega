@@ -506,6 +506,7 @@ header {
 }
 .footer .footer-social .social-links i li {
   display: inline-block;
+  text-decoration: none;
   margin-right: 10px;
 }
 .footer .footer-social .social-links i a {
